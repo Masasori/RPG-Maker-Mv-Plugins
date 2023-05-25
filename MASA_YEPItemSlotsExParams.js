@@ -57,50 +57,45 @@ ItemManager.effectIUSParamRateChange = function(item, stat, value) {
     switch (stat) {
       case 'EX1':
         item.traits.push({code: 22, dataId: 0, value: value/100});
+        item.description += " (Hit Rate +" + value + "%)";
         break;
       case 'EX2':
         item.traits.push({code: 22, dataId: 1, value: value/100});
+        item.description += " (Evasion Rate +" + value + "%)";
         break;
       case 'EX3':
         item.traits.push({code: 22, dataId: 2, value: value/100});
+        item.description += " (Critical Rate +" + value + "%)";
         break;
       case 'EX4':
         item.traits.push({code: 22, dataId: 3, value: value/100});
+        item.description += " (Critical Evasion +" + value + "%)";
         break;
       case 'EX5':
         item.traits.push({code: 22, dataId: 4, value: value/100});
+        item.description += " (Magic Evasion +" + value + "%)";
         break;
       case 'EX6':
         item.traits.push({code: 22, dataId: 5, value: value/100});
+        item.description += " (Magic Reflection +" + value + "%)";
         break;
       case 'EX7':
         item.traits.push({code: 22, dataId: 6, value: value/100});
+        item.description += " (Counter Attack +" + value + "%)";
         break;
       case 'EX8':
         item.traits.push({code: 22, dataId: 7, value: value/100});
+        item.description += " (HP Regeneration +" + value + "%)";
         break;
       case 'EX9':
         item.traits.push({code: 22, dataId: 8, value: value/100});
+        item.description += " (MP Regeneration +" + value + "%)";
         break;
       case 'EX10':
         item.traits.push({code: 22, dataId: 9, value: value/100});
+        item.description += " (TP Regeneration +" + value + "%)";
         break;
     }
 };
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
