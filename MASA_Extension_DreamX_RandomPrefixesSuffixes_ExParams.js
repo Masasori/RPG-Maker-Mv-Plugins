@@ -1,12 +1,12 @@
 //=============================================================================
-// Masa_YEPItemSlotsExParams.js
+// MASA_Extension_DreamX_RandomPrefixesSuffixes_ExParams.js
 //=============================================================================
 
 var Imported = Imported || {};
-Imported.Masa_YEPItemSlotsExParams = true;
+Imported.Masa_MASA_Extension_DreamX_RandomPrefixesSuffixes_ExParams = true;
 
 var Masa = Masa || {};
-Masa.YEPItemSlotsExParams = Masa.YEPItemSlotsExParams || {};
+Masa.MASA_Extension_DreamX_RandomPrefixesSuffixes_ExParams = Masa.MASA_Extension_DreamX_RandomPrefixesSuffixes_ExParams || {};
 
 //=============================================================================
  /*:
