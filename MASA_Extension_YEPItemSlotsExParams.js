@@ -1,12 +1,12 @@
 //=============================================================================
-// Masa_YEPItemSlotsExParams.js
+// Masa_Extension_YEPItemSlotsExParams.js
 //=============================================================================
 
 var Imported = Imported || {};
-Imported.Masa_YEPItemSlotsExParams = true;
+Imported.Masa_Extension_YEPItemSlotsExParams = true;
 
 var Masa = Masa || {};
-Masa.YEPItemSlotsExParams = Masa.YEPItemSlotsExParams || {};
+Masa.Extension_YEPItemSlotsExParams = Masa.Extension_YEPItemSlotsExParams || {};
 
 //=============================================================================
  /*:
@@ -19,7 +19,7 @@ Masa.YEPItemSlotsExParams = Masa.YEPItemSlotsExParams || {};
  * Introduction
  * ============================================================================
  *
- * This plugin expands YEP_X_ItemUpgradeSlots Plugins
+ * This plugin expands YEP_X_ItemUpgradeSlots Plugin
  * with the function to add Ex-Paramters.
  *
  * ============================================================================
