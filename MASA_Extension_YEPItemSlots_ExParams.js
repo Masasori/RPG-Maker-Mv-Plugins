@@ -1,12 +1,12 @@
 //=============================================================================
-// Masa_Extension_YEPItemSlotsExParams.js
+// Masa_Extension_YEPItemSlots_ExParams.js
 //=============================================================================
 
 var Imported = Imported || {};
-Imported.Masa_Extension_YEPItemSlotsExParams = true;
+Imported.Masa_Extension_YEPItemSlots_ExParams = true;
 
 var Masa = Masa || {};
-Masa.Extension_YEPItemSlotsExParams = Masa.Extension_YEPItemSlotsExParams || {};
+Masa.Extension_YEPItemSlots_ExParams = Masa.Extension_YEPItemSlots_ExParams || {};
 
 //=============================================================================
  /*:
@@ -51,9 +51,9 @@ Masa.Extension_YEPItemSlotsExParams = Masa.Extension_YEPItemSlotsExParams || {};
 if (Imported.YEP_X_ItemUpgrades) {
 
 //=============================================================================
-Masa.ItemManager_effectIUSParamRateChange = ItemManager.effectIUSParamRateChange;
+Masa.Extension_YEPItemSlots_ExParams.ItemManager_effectIUSParamRateChange = ItemManager.effectIUSParamRateChange;
 ItemManager.effectIUSParamRateChange = function(item, stat, value) {
-    Masa.ItemManager_effectIUSParamRateChange.call(this);
+    Masa.Extension_YEPItemSlots_ExParams.ItemManager_effectIUSParamRateChange.call(this);
     algSign = "";
     if (value > 0){
         algSign = "+";
