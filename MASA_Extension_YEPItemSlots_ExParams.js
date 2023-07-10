@@ -36,16 +36,16 @@ Masa.Extension_YEPItemSlots_Traits = Masa.Extension_YEPItemSlots_Traits || {};
  * 
  * To add "Element Rates" write "ER: " than the index 
  * of the element in the editor (starting with index 1)
- * followed by the percentage.
+ * followed by the percentage (+/- infront).
  *
- * e.g: Element 1 80%
+ * e.g: Element 1 +80%
  *   <Upgrade Effect>
- *    ER: 1 80%
+ *    ER: 1 +80%
  *   </Upgrade Effect>
  *
- * e.g: Element 3 120%
+ * e.g: Element 3 -20%
  *   <Upgrade Effect>
- *    ER: 3 120%
+ *    ER: 3 -20%
  *   </Upgrade Effect>
  *
  *
@@ -113,9 +113,14 @@ ItemManager.processIUSEffect = function(line, mainItem, effectItem) {
       return this.addTraitToItem(mainItem, 31, value, 1);
     }
     // ER: X Y%
-    if (line.match(/ER:[ ](\d+)[ ](\d+)([%％])/i)) {
+    if (line.match(/ER:[ ](\d+)[ ]([\+\-]\d+)([%％])/i)) {
       var value1 = parseInt(RegExp.$1);
       var value2 = parseInt(RegExp.$2);
+      algSign = "";
+      if (value2 > 0){
+          algSign = "+";
+      }
+      mainItem.description += " (" + $dataSystem.elements[value1] + " " + algSign + value2 + "%)";
       return this.addTraitToItem(mainItem, 11, value1, value2/100);
     }
 };
