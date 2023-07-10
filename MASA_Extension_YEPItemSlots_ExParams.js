@@ -110,6 +110,7 @@ ItemManager.processIUSEffect = function(line, mainItem, effectItem) {
     // AE: X
     if (line.match(/AE:[ ](\d+)/i)) {
       var value = parseInt(RegExp.$1);
+      mainItem.description += " (" + $dataSystem.elements[value] + ")";
       return this.addTraitToItem(mainItem, 31, value, 1);
     }
     // ER: X Y%
